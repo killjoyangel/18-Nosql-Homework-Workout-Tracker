@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const Workout = require("../models/workout");
+const Workout = require("../models/workouts");
 
-router.post("/api/workout", ({ body }, res) => {
-  Transaction.create(body)
+router.post("/api/workouts", (req, res) => {
+  Workout.create(req.body)
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
@@ -11,21 +11,36 @@ router.post("/api/workout", ({ body }, res) => {
     });
 });
 
-router.post("/api/transaction/bulk", ({ body }, res) => {
-  Transaction.insertMany(body)
-    .then(dbTransaction => {
-      res.json(dbTransaction);
+router.get("/api/workouts", (req, res) => {
+  Workout.aggregate([
+    {$addFields:{totalDuration:{$sum:'$exercises.duration'}}}
+  ])
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.status(400).json(err);
     });
 });
 
-router.get("/api/transaction", (req, res) => {
-  Transaction.find({})
+router.put("/api/workouts/:id", ({params, body }, res) => {
+  Workout.findByIdAndUpdate(params.id, {$push:{exercises:body}}, {new:true})
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
+});
+
+router.get("/api/workouts/range", (req, res) => {
+  Workout.aggregate([
+    {$addFields:{totalDuration:{$sum:'$exercises.duration'}}}
+  ])
     .sort({ date: -1 })
-    .then(dbTransaction => {
-      res.json(dbTransaction);
+    .limit(7)
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
       res.status(400).json(err);
