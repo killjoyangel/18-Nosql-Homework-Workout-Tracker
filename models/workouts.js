@@ -13,14 +13,14 @@ day: {
       type: {
         type: String,
         trim: true,
-        required: true,
+        required: true
      },
     
       name:
       {
         type: String,
         trim: true,
-        required: true, 
+        required: true
       },
     
       duration: {
