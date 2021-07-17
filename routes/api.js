@@ -33,7 +33,7 @@ router.put("/api/workouts/:id", ({params, body }, res) => {
     });
 });
 
-router.get("/api/workouts/range", (req, res) => {
+router.get("/api/Workouts/range", (req, res) => {
   Workout.aggregate([
     {$addFields:{totalDuration:{$sum:'$exercises.duration'}}}
   ])
