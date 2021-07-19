@@ -1,12 +1,9 @@
-# 13-Object-Relational-Mapping-ORM-E-Commerce-Back-End
-
+# 12-MySQL-Employee-Tracker
 ## Introduction:
-Our task wass to build a back end for an e-commerce site by modifying starter code that was provided to us. We were to configure a working Express.js API. In order to  use Sequelize to interact with a MySQL database.
+Our task was to build a command line appe. That offered a solution for managing a company's employees. We were to create a  database schema containing three tables: Department, Role, Employee
 
-Because this application won’t be deployed, you’ll also need to provide a link to a walkthrough video that demonstrates its functionality and all of the acceptance criteria being met. You’ll need to submit a link to the video and add it to the readme of your project.
-
-I created a walkthrough video that demonstrates its functionality:
-[E-Commerce Walkthrough Video](https://drive.google.com/file/d/12KFl-aywg60e875x8bd6Uw1RBWWl7jDj/view)
+I created a demo that you can view on this link:
+ [Employee Tracker](https://drive.google.com/file/d/1dgPth9zk1ughTf0ftX4o3bnSW4P3Jd19/view)
 
 <br>
 <br>
@@ -15,46 +12,50 @@ I created a walkthrough video that demonstrates its functionality:
 ## Technologies used:
 
 * Java Script
+* Iqurer
 * MySQL
-* Sequlize
-* Mysql2
-* Node
+* Inquirer
+* console.table 
 
 
-The application will be invoked by using the following commands:
+The application will be invoked by using the following command:
 ```bash
-mysql -u root
-source db/schema.sql
-```
-```bash
-npm run seed
-```
-```bash
-npm start
+node index.js
 ```
 <br>
 <br>
 
-### Model code
-![screenshot](assets/img/models.JPG)
+### Original Java Script  Code
+![screenshot](assets/images/code.JPG)
 
 <br>
 <br>
 
-### Api Routes
-![screenshot](assets/img/api.JPG)
+### Screenshot of terminal
+![screenshot](assets/images/terminal.JPG)
 
 <br>
 <br>
 
 ### Screenshot of schema
-![screenshot](assets/img/schema.JPG)
+![screenshot](assets/images/schema.JPG)
 
 <br>
 <br>
+
+### Screenshot of seeds
+![screenshot](assets/images/seeds.JPG)
+
 
 ### Demo of app
-![Demo Gif](assets/img/walkthrough.gif)
+![Demo Gif](assets/images/employeetracker.gif)
+
+<br>
+<br>
+
+## Screenshot of Final sampleREADME
+
+![screenshot](assets/images/final.JPG)
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
