@@ -2,8 +2,8 @@
 ## Introduction:
 
 
-I created a demo that you can view on this link:
- [Employee Tracker](https://drive.google.com/file/d/1dgPth9zk1ughTf0ftX4o3bnSW4P3Jd19/view)
+I created a demo app that you can use on this link:
+ [Fitness Tracker app](https://guarded-cliffs-88585.herokuapp.com/?id=60f4d3c3a314c70015bf8227)
 
 <br>
 <br>
@@ -20,17 +20,6 @@ I created a demo that you can view on this link:
 * mongoose
 * morgan
 
-
-The application will be invoked by using the following commands:
-```bash
-npm i
-```
-```bash
-npm run seed
-```
-```bash
-npm start
-```
 <br>
 <br>
 ### Original Java Script  Code
