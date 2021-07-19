@@ -1,6 +1,6 @@
 # 18-Nosql-Homework-Workout-Tracker
 ## Introduction:
-
+For this assignment, I created a workout tracker. I was provided with the front end starter code. This assignment required us to create a Mongo database with a Mongoose schema and handle routes with Express.
 
 I created a demo app that you can use on this link:
  [Fitness Tracker app](https://guarded-cliffs-88585.herokuapp.com/?id=60f4d3c3a314c70015bf8227)
@@ -13,7 +13,6 @@ I created a demo app that you can use on this link:
 
 * Java Script
 * mongodb
-* mogodb 
 * mongodb atlas
 * heroku
 * express
@@ -22,38 +21,37 @@ I created a demo app that you can use on this link:
 
 <br>
 <br>
-### Original Java Script  Code
-![screenshot](assets/images/code.JPG)
+
+### Screenshot of Model Code
+![screenshot](assets/img/moduls.JPG)
 
 <br>
 <br>
 
-### Screenshot of terminal
-![screenshot](assets/images/terminal.JPG)
+### Screenshot of Routes code
+![screenshot](assets/img/routes.JPG)
 
 <br>
 <br>
 
-### Screenshot of schema
-![screenshot](assets/images/schema.JPG)
+### Screenshot of server
+![screenshot](assets/img/server.JPG)
 
 <br>
 <br>
 
-### Screenshot of seeds
-![screenshot](assets/images/seeds.JPG)
+### Screenshot of Mongo Atlas workout database
+![screenshot](assets/img/mongoatlas.png)
 
 
-### Demo of app
-![Demo Gif](assets/images/employeetracker.gif)
+### Finished Heroku app screenshot
+![screenshot](assets/img/finalapp1.png)
 
 <br>
 <br>
 
-## Screenshot of Final sampleREADME
-
-![screenshot](assets/images/final.JPG)
-
+### Finished Heroku app screenshot
+![screenshot](assets/img/finalapp2.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
