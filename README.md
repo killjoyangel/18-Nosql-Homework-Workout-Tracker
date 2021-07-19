@@ -1,6 +1,6 @@
-# 12-MySQL-Employee-Tracker
+# 18-Nosql-Homework-Workout-Tracker
 ## Introduction:
-Our task was to build a command line appe. That offered a solution for managing a company's employees. We were to create a  database schema containing three tables: Department, Role, Employee
+
 
 I created a demo that you can view on this link:
  [Employee Tracker](https://drive.google.com/file/d/1dgPth9zk1ughTf0ftX4o3bnSW4P3Jd19/view)
@@ -12,19 +12,27 @@ I created a demo that you can view on this link:
 ## Technologies used:
 
 * Java Script
-* Iqurer
-* MySQL
-* Inquirer
-* console.table 
+* mongodb
+* mogodb 
+* mongodb atlas
+* heroku
+* express
+* mongoose
+* morgan
 
 
-The application will be invoked by using the following command:
+The application will be invoked by using the following commands:
 ```bash
-node index.js
+npm i
+```
+```bash
+npm run seed
+```
+```bash
+npm start
 ```
 <br>
 <br>
-
 ### Original Java Script  Code
 ![screenshot](assets/images/code.JPG)
 
